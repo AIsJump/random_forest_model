@@ -1,0 +1,11 @@
+import thrember, sys
+sys.path.append('C:\\Users\\aaron\\AppData\\Roaming\\Python\\Python313\\Scripts')
+# print('downloading training data')
+# thrember.download_dataset('datasets', file_type='Win64', split='train')
+# print('finished')
+# print('downloading testing data')
+# thrember.download_dataset('datasets', file_type='Win64', split='test')
+# print('finished')
+print('downloading challenge data')
+thrember.download_dataset('datasets', file_type='Win64', split='challenge')
+print('finished')
