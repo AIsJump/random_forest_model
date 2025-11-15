@@ -1,5 +1,11 @@
 # Random Forest Model
 
+The docker image can be found here:
+
+```
+docker pull <user>/random_model:latest
+```
+
 ## Notes
 
 This is an extra model for defense
