@@ -1,3 +1,43 @@
+# Random Forest Model
+
+## Notes
+
+This is an extra model for defense
+
+## Setup
+
+Need to get the EMBER 2024 dataset and other libraries, so please install dependencies using:
+
+```
+pip install .
+```
+
+Create a directory for the training data using:
+
+```
+mkdir datasets
+mkdir model_datasets
+```
+
+Afterwards, grab the datasets one by one (training, testing, challenge) using:
+
+```
+# due to quirk of library, separate instances must be called
+python get_dataset.py 0
+python get_dataset.py 1
+python get_dataset.py 2
+```
+
+Move the data to train and test off of into `model_datasets`.  Then, to train the model run:
+
+```
+python random_forest_classifier.py
+```
+
+The output will give some assurances that the model works.
+
+The rest of the README file is copied from the EMBER2024 repo for consistency.
+
 # EMBER2024
 
 EMBER2024 is an update to the [EMBER2017 and EMBER2018](https://github.com/elastic/ember/) datasets. It includes raw features and labels for 3.2 million malicious and benign files from 6 different file types (Win32, Win64, .NET, APK, ELF, and PDF). EMBER2024 is meant to allow researchers to explore a variety of common malware analysis classification tasks. The dataset includes 7 types of labels and tags that support malicious/benign detection, malware family classification, malware behavior prediction, and more.
