@@ -1,5 +1,6 @@
 import thrember, sys
 
+# LEGACY DO NOT USE!!!!!!!!!!!!!!!!!
 t = sys.argv[1]
 
 if t == '0':
